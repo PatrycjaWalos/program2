@@ -48,6 +48,7 @@ public class ObslugaBazy {
     
      
     public void AddUser() {
+        System.err.println("");
         buildSessionFactory();
         Session session = getSessionFactory().openSession();
         session.beginTransaction();
