@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2015-04-14 19:18:26 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Baza.Result" table="result" catalog="mojabaza" optimistic-lock="version">
+        <id name="idResult" type="java.lang.Integer">
+            <column name="id_result" />
+            <generator class="identity" />
+        </id>
+        <property name="idUser" type="int">
+            <column name="id_user" not-null="true" />
+        </property>
+        <property name="date" type="timestamp">
+            <column name="date" length="19" not-null="true" />
+        </property>
+        <property name="time" type="time">
+            <column name="time" length="8" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
